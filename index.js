@@ -15,6 +15,10 @@ function calculate(e) {
     alert("Please enter all values..");
     return;
   }
+  else if(initialPrice < 0 || noOfStocks < 0 || sellingPrice < 0){
+    alert("Invalid data enter!!");
+    return;
+  }
   if (sellingPrice > initialPrice) {
     let profit = sellingPrice - initialPrice;
     let profitPercentage = (profit / initialPrice) * 100;
